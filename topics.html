@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teemad | Äriinfosüsteemid</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Äriinfo<span>süsteemid</span></a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Avaleht</a></li>
+                    <li><a href="topics.html">Teemad</a></li>
+                    <li><a href="resources.html">Materjalid</a></li>
+                    <li><a href="about.html">Info</a></li>
+                    <li>
+                        <div class="lang-switch">
+                            <span class="lang-et">ET</span>
+                            <label class="switch">
+                                <input type="checkbox" class="lang-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="lang-en">EN</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Topics Content -->
+    <section class="content-section">
+        <div class="container content-container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h3>Teemad</h3>
+                <ul>
+                    <li><a href="#introduction" class="active">Sissejuhatus</a></li>
+                    <li><a href="#architecture">Arhitektuurilised kontseptsioonid</a></li>
+                    <li><a href="#communication">Suhtlusmeetodid</a></li>
+                    <li><a href="#data-formats">Andmeformaadid</a></li>
+                    <li><a href="#security">Turvaaspektid</a></li>
+                    <li><a href="#case-studies">Juhtumiuuringud</a></li>
+                </ul>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="main-content">
+                <section id="introduction">
+                    <h2>Sissejuhatus arvutiprogrammide suhtlusse</h2>
+                    
+                    <h3>Olulisus ettevõtluses</h3>
+                    <p>Tänapäeva ettevõtlus on muutunud järjest keerukamaks ja globaalsemaks. Ettevõtted peavad hallata keerulisi tarneahelaid, mis hõlmavad mitmeid osapooli, asukohti ja süsteeme. Sellises keskkonnas on arvutiprogrammide vaheline suhtlus muutunud kriitiliselt oluliseks, võimaldades:</p>
+                    <ul>
+                        <li>Reaalajas andmevahetus - Kaupade asukoha, oleku ja liikumise jälgimine kogu tarneahela ulatuses</li>
+                        <li>Protsesside automatiseerimine - Tellimuste töötlemine, laohaldus ja transpordi planeerimine ilma inimese sekkumiseta</li>
+                        <li>Andmete integreerimine - Erinevate süsteemide (ERP, WMS, TMS) vaheline sujuv andmevahetus</li>
+                        <li>Otsuste tegemise toetamine - Andmete kogumine ja analüüsimine optimaalsete logistiliste otsuste tegemiseks</li>
+                        <li>Klienditeeninduse parandamine - Täpsed tarneajad ja olekuteated klientidele</li>
+                    </ul>
+                    
+                    <div class="image-container">
+                        <img src="images/slide_3_image_3.png" alt="Digitaalse suhtluse illustratsioon" class="gallery-img">
+                    </div>
+                    
+                    <h3>Ajalooline areng ja evolutsioon</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>1960-1970: Varased algused</h4>
+                            <ul>
+                                <li>Failipõhine andmevahetus</li>
+                                <li>Pakettöötlus</li>
+                                <li>Suurarvutid</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1980-1990: Võrgupõhised lahendused</h4>
+                            <ul>
+                                <li>Klient-server arhitektuur</li>
+                                <li>EDI (Electronic Data Interchange)</li>
+                                <li>RPC (Remote Procedure Call)</li>
+                            </ul>
+                            <div class="image-container">
+                                <img src="images/slide_6_image_3.png" alt="Võrgu diagramm" class="gallery-img">
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>1990-2000: Interneti ja veebiteenuste algus</h4>
+                            <ul>
+                                <li>CORBA (Common Object Request Broker Architecture)</li>
+                                <li>DCOM (Distributed Component Object Model)</li>
+                                <li>Java RMI (Remote Method Invocation)</li>
+                            </ul>
+                            <div class="image-container">
+                                <img src="images/slide_7_image_3.png" alt="Veebiteenuste diagramm" class="gallery-img">
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>2000-2010: Veebiteenuste võidukäik</h4>
+                            <ul>
+                                <li>XML ja SOAP</li>
+                                <li>WSDL (Web Services Description Language)</li>
+                                <li>REST (Representational State Transfer)</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>2010-2020: Mikroteenused ja pilv</h4>
+                            <ul>
+                                <li>JSON - Kergem alternatiiv XML-ile</li>
+                                <li>Mikroteenuste arhitektuur</li>
+                                <li>Pilveteenused</li>
+                                <li>Konteineriseerimine (Docker, Kubernetes)</li>
+                            </ul>
+                            <div class="image-container">
+                                <img src="images/slide_8_image_3.png" alt="Mikroteenuste diagramm" class="gallery-img">
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>2020-tänapäev: API-majandus ja integratsioonid</h4>
+                            <ul>
+                                <li>API-first lähenemine</li>
+                                <li>GraphQL</li>
+                                <li>Serverless arhitektuur</li>
+                                <li>Event-driven arhitektuur</li>
+                                <li>IoT (Internet of Things)</li>
+                            </ul>
+                            <div class="image-container">
+                                <img src="images/slide_9_image_3.png" alt="Kaasaegse API diagramm" class="gallery-img">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="architecture">
+                    <h2>Arhitektuurilised kontseptsioonid</h2>
+                    
+                    <h3>Klient-server arhitektuur</h3>
+                    <p>Klient-server arhitektuur on üks levinumaid mudeleid arvutiprogrammide vahelises suhtluses. See on fundamentaalne kontseptsioon, millel põhinevad paljud tänapäeva süsteemid, sealhulgas veebiteenused, andmebaasid ja hajussüsteemid.</p>
+                    
+                    <h4>Põhimõte</h4>
+                    <p>Klient-server arhitektuuris on rollid selgelt jaotatud:</p>
+                    <ul>
+                        <li>Server - pakub teenuseid, ressursse või funktsionaalsust</li>
+                        <li>Klient - kasutab serveri pakutavaid teenuseid</li>
+                    </ul>
+                    
+                    <p>Suhtlus toimub tavaliselt järgmiselt:</p>
+                    <ol>
+                        <li>Klient algatab ühenduse, saates serverile päringu</li>
+                        <li>Server töötleb päringu ja genereerib vastuse</li>
+                        <li>Server saadab vastuse kliendile</li>
+                        <li>Klient töötleb vastuse</li>
+                    </ol>
+                    
+                    <div class="image-container">
+                        <img src="images/slide_17_image_1.png" alt="Klient-server arhitektuur" class="gallery-img">
+                    </div>
+                    
+                    <h4>Eelised</h4>
+                    <ul>
+                        <li>Selge rollide jaotus - vastutus on selgelt jagatud</li>
+                        <li>Tsentraliseeritud ressursid - andmed ja teenused on koondatud</li>
+                        <li>Skaleeritavus - servereid saab lisada vastavalt vajadusele</li>
+                        <li>Turvalisus - ligipääsu saab kontrollida tsentraalselt</li>
+                    </ul>
+                    
+                    <h4>Puudused</h4>
+                    <ul>
+                        <li>Üksikpunkti rike (single point of failure) - serveri tõrge mõjutab kõiki kliente</li>
+                        <li>Võrgulatents - suhtlus võib olla aeglane kaugete klientide puhul</li>
+                        <li>Ressursside piiratus - server võib ülekoormatud saada</li>
+                    </ul>
+                    
+                    <h3>Hajussüsteemid</h3>
+                    <p>Hajussüsteem on arvutisüsteem, mille komponendid asuvad erinevates arvutites ja suhtlevad omavahel võrgu kaudu, kuid kasutajale näivad ühtse süsteemina.</p>
+                    
+                    <h4>Põhiomadused</h4>
+                    <ul>
+                        <li>Hajutatus - komponendid töötavad erinevates arvutites</li>
+                        <li>Autonoomsus - komponendid töötavad iseseisvalt</li>
+                        <li>Läbipaistvus - süsteemi keerukus on kasutaja eest varjatud</li>
+                        <li>Skaleeritavus - süsteemi saab laiendada lisades uusi komponente</li>
+                        <li>Tõrkekindlus - ühe komponendi rike ei põhjusta kogu süsteemi riket</li>
+                    </ul>
+                    
+                    <div class="image-container">
+                        <img src="images/slide_19_image_3.png" alt="Hajussüsteemid" class="gallery-img">
+                    </div>
+                    
+                    <h4>Väljakutsed</h4>
+                    <ul>
+                        <li>Võrguprobleemid - latents, ebausaldusväärsus, ribalaiuse piirangud</li>
+                        <li>Koordineerimine - komponentide tegevuse sünkroniseerimine</li>
+                        <li>Järjepidevus - andmete järjepidevuse tagamine kõigis komponentides</li>
+                        <li>Turvalisus - hajutatud süsteemi kaitsmine on keerulisem</li>
+                    </ul>
+                </section>
+                
+                <section id="communication">
+                    <h2>Suhtlusmeetodid</h2>
+                    
+                    <h3>Sünkroonne vs. asünkroonne suhtlus</h3>
+                    <p>Arvutiprogrammide vahelises suhtluses on kaks peamist mudelit: sünkroonne ja asünkroonne suhtlus.</p>
+                    
+                    <h4>Sünkroonne suhtlus</h4>
+                    <p>Põhimõte: Klient saadab päringu ja ootab vastust enne jätkamist.</p>
+                    <p>Analoogia: Telefonikõne - mõlemad osapooled on samaaegselt seotud.</p>
+                    
+                    <div class="image-container">
+                        <img src="images/slide_22_image_3.png" alt="Sünkroonne suhtlus" class="gallery-img">
+                    </div>
+                    
+                    <h4>Sünkroonse suhtluse eelised</h4>
+                    <ul>
+                        <li>Lihtne mõista ja implementeerida</li>
+                        <li>Otsene tagasiside</li>
+                        <li>Lihtne veahaldus</li>
+                    </ul>
+                    
+                    <h4>Sünkroonse suhtluse puudused</h4>
+                    <ul>
+                        <li>Blokeerib kliendi, kuni vastus saabub</li>
+                        <li>Ressursside raiskamine ootamise ajal</li>
+                        <li>Tundlik võrguprobleemide suhtes</li>
+                    </ul>
+                    
+                    <h4>Asünkroonne suhtlus</h4>
+                    <p>Põhimõte: Klient saadab päringu ja jätkab tööd ilma vastust ootamata.</p>
+                    <p>Analoogia: E-kiri - saatja jätkab tegevust pärast kirja saatmist.</p>
+                    
+                    <div class="image-container">
+                        <img src="images/slide_23_image_3.png" alt="Asünkroonne suhtlus" class="gallery-img">
+                    </div>
+                    
+                    <h4>Asünkroonse suhtluse eelised</h4>
+                    <ul>
+                        <li>Parem ressursside kasutus</li>
+                        <li>Suurem skaleeritavus</li>
+                        <li>Vastupidavus võrguprobleemidele</li>
+                    </ul>
+                    
+                    <h4>Asünkroonse suhtluse puudused</h4>
+                    <ul>
+                        <li>Keerulisem implementeerida</li>
+                        <li>Keerulisem veahaldus</li>
+                        <li>Võib tekitada keerukaid olekuhalduse probleeme</li>
+                    </ul>
+                    
+                    <h3>Sõnumipõhine suhtlus</h3>
+                    <p>Sõnumipõhine suhtlus on asünkroonse suhtluse vorm, kus programmid vahetavad andmeid sõnumite kaudu, kasutades tavaliselt sõnumivahendajat (message broker).</p>
+                    
+                    <h4>Põhikomponendid</h4>
+                    <ul>
+                        <li>Sõnumid - andmeüksused, mida vahetatakse</li>
+                        <li>Sõnumijärjekorrad - sõnumite ajutised hoiukohad</li>
+                        <li>Tootjad (producers) - loovad ja saadavad sõnumeid</li>
+                        <li>Tarbijad (consumers) - võtavad vastu ja töötlevad sõnumeid</li>
+                        <li>Sõnumivahendaja - haldab sõnumite liikumist tootjate ja tarbijate vahel</li>
+                    </ul>
+                    
+                    <h4>Sõnumiedastuse mustrid</h4>
+                    <ul>
+                        <li>Point-to-Point - üks sõnum jõuab täpselt ühe tarbijani</li>
+                        <li>Publish-Subscribe - üks sõnum jõuab kõigi huvitatud tarbijateni</li>
+                        <li>Request-Reply - sõnumile oodatakse vastust, kuid asünkroonselt</li>
+                        <li>Competing Consumers - mitu tarbijat konkureerivad sõnumite pärast</li>
+                    </ul>
+                </section>
+                
+                <section id="data-formats">
+                    <h2>Andmeformaadid</h2>
+                    
+                    <h3>JSON (JavaScript Object Notation)</h3>
+                    <p>Kergekaaluline andmevahetusformaat, mis on inimestele lihtsasti loetav ja kirjutatav ning masinatele lihtsasti töödeldav ja genereeritav.</p>
+                    
+                    <div class="image-container">
+                        <img src="images/slide_13_image_3.png" alt="JSON näide" class="gallery-img">
+                    </div>
+                    
+(Content truncated due to size limit. Use line ranges to read in chunks)

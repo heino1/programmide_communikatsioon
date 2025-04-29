@@ -1,0 +1,100 @@
+    ],
+    "notes": "SETI arvutamine",
+    "images": [
+      "slide_19_image_3.png"
+    ]
+  },
+  {
+    "slide_number": 20,
+    "title": "Hajussüsteemid",
+    "content": [
+      "Väljakutsed\nVõrguprobleemid - latents, ebausaldusväärsus, ribalaiuse piirangud\nKoordineerimine - komponentide tegevuse sünkroniseerimine\nJärjepidevus - andmete järjepidevuse tagamine kõigis komponentides\nTurvalisus - hajutatud süsteemi kaitsmine on keerulisem"
+    ],
+    "notes": "",
+    "images": [
+      "slide_20_image_3.png"
+    ]
+  },
+  {
+    "slide_number": 21,
+    "title": "Hajussüsteemid",
+    "content": [
+      "Näide:\nGlobaalne logistika ettevõte, mille süsteemid on jaotatud erinevate piirkondade vahel: \n- Iga piirkond haldab oma lao- ja transpordisüsteeme \n- Keskne süsteem koordineerib globaalseid operatsioone \n- Andmed sünkroniseeritakse piirkondade vahel \n- Kliendid näevad ühtset vaadet olenemata sellest, millises piirkonnas nende kaup asub"
+    ],
+    "notes": "",
+    "images": [
+      "slide_21_image_3.png"
+    ]
+  },
+  {
+    "slide_number": 22,
+    "title": "Sünkroonne vs asünkroonne suhtlus",
+    "content": [
+      "Arvutiprogrammide vahelises suhtluses on kaks peamist mudelit: sünkroonne ja asünkroonne suhtlus.\nSünkroonne suhtlus\nPõhimõte: \u000bKlient saadab päringu ja ootab vastust \u000benne jätkamist\nAnaloogia: Telefonikõne \u000b  - mõlemad osapooled on samaaegselt seotud"
+    ],
+    "notes": "",
+    "images": [
+      "slide_22_image_3.png"
+    ]
+  },
+  {
+    "slide_number": 23,
+    "title": "Sünkroonne vs asünkroonne suhtlus",
+    "content": [
+      "Arvutiprogrammide vahelises suhtluses on kaks peamist mudelit: sünkroonne ja asünkroonne suhtlus.\nAsünkroonne suhtlus\nPõhimõte: \u000bKlient saadab päringu ja jätkab tööd \u000bilma vastust ootamata\nAnaloogia: \u000bE-kiri - \u000bsaatja jätkab tegevust pärast kirja \u000bsaatmist"
+    ],
+    "notes": "",
+    "images": [
+      "slide_23_image_3.png"
+    ]
+  },
+  {
+    "slide_number": 24,
+    "title": "Sünkroonne vs asünkroonne suhtlus",
+    "content": [
+      "Sünkroonne suhtlus\nEelised:\nLihtne mõista ja implementeerida\nOtsene tagasiside\nLihtne veahaldus\nPuudused:\nBlokeerib kliendi, kuni vastus saabub\nRessursside raiskamine ootamise ajal\nTundlik võrguprobleemide suhtes"
+    ],
+    "notes": "",
+    "images": [
+      "slide_24_image_3.png"
+    ]
+  },
+  {
+    "slide_number": 25,
+    "title": "Sünkroonne vs asünkroonne suhtlus",
+    "content": [
+      "Asünkroonne suhtlus\nEelised:\nParem ressursside kasutus\nSuurem skaleeritavus\nVastupidavus võrguprobleemidele\nPuudused:\nKeerulisem implementeerida\nKeerulisem veahaldus\nVõib tekitada keerukaid olekuhalduse probleeme"
+    ],
+    "notes": "",
+    "images": []
+  },
+  {
+    "slide_number": 26,
+    "title": "Sünkroonne vs asünkroonne suhtlus",
+    "content": [
+      "Näide logistika valdkonnast\nSünkroonne: Laotöötaja skanneerib toote ja ootab kohest kinnitust, et toode on süsteemis registreeritud\nAsünkroonne: Tellimuse esitamine süsteemi, mis töötleb tellimusi järjekorras ja saadab hiljem e-kirja kinnitusega"
+    ],
+    "notes": "",
+    "images": []
+  },
+  {
+    "slide_number": 27,
+    "title": "Sõnumipõhine suhtlus",
+    "content": [
+      "Sõnumipõhine suhtlus on asünkroonse suhtluse vorm, kus programmid vahetavad andmeid sõnumite kaudu, kasutades tavaliselt sõnumivahendajat (message broker).\nPõhikomponendid\nSõnumid - andmeüksused, mida vahetatakse\nSõnumijärjekorrad - sõnumite ajutised hoiukohad\nTootjad (producers) - loovad ja saadavad sõnumeid\nTarbijad (consumers) - võtavad vastu ja töötlevad sõnumeid\nSõnumivahendaja - haldab sõnumite liikumist tootjate ja tarbijate vahel"
+    ],
+    "notes": "",
+    "images": []
+  },
+  {
+    "slide_number": 28,
+    "title": "Sõnumipõhine suhtlus",
+    "content": [
+      "Sõnumiedastuse mustrid\nPoint-to-Point - üks sõnum jõuab täpselt ühe tarbijani\nPublish-Subscribe - üks sõnum jõuab kõigi huvitatud tarbijateni\nRequest-Reply - sõnumile oodatakse vastust, kuid asünkroonselt\nCompeting Consumers - mitu tarbijat konkureerivad sõnumite pärast\nPopulaarsed sõnumivahendajad\nRabbitMQ - AMQP protokollil põhinev sõnumivahendaja\nApache Kafka - kõrge läbilaskevõimega hajutatud sõnumisüsteem\nAmazon SQS/SNS - AWS pilvepõhised sõnumisteenused\nAzure Service Bus - Microsoft Azure pilvepõhine sõnumiteenus"
+    ],
+    "notes": "",
+    "images": []
+  },
+  {
+    "slide_number": 29,
+    "title": "Sõnumipõhine suhtlus",
