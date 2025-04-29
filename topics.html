@@ -288,4 +288,117 @@
                         <img src="images/slide_13_image_3.png" alt="JSON näide" class="gallery-img">
                     </div>
                     
-(Content truncated due to size limit. Use line ranges to read in chunks)
+                    <h3>XML (eXtensible Markup Language)</h3>
+                    <p>Märgenduspõhine andmevahetusformaat, mis kasutab silte elementide ja nende atribuutide defineerimiseks.</p>
+                    
+                    <div class="image-container">
+                        <img src="images/slide_13_image_4.png" alt="XML näide" class="gallery-img">
+                    </div>
+                    
+                    <h3>Protocol Buffers</h3>
+                    <p>Google'i loodud binaarformaat andmete serialiseerimiseks, mis on kompaktsem ja kiirem kui XML või JSON.</p>
+                    
+                    <div class="image-container">
+                        <img src="images/slide_13_image_5.png" alt="Protocol Buffers näide" class="gallery-img">
+                    </div>
+                    
+                    <h3>YAML</h3>
+                    <p>Inimloetav andmeserialiseerimine formaat, mida kasutatakse sageli konfiguratsioonifailides.</p>
+                    
+                    <div class="image-container">
+                        <img src="images/slide_13_image_6.png" alt="YAML näide" class="gallery-img">
+                    </div>
+                    
+                    <h3>CSV (Comma-Separated Values)</h3>
+                    <p>Lihtne tekstipõhine formaat tabelite andmete esitamiseks.</p>
+                    
+                    <div class="image-container">
+                        <img src="images/slide_13_image_7.png" alt="CSV näide" class="gallery-img">
+                    </div>
+                </section>
+                
+                <section id="security">
+                    <h2>Turvaaspektid</h2>
+                    
+                    <p>Turvalisus on kriitiline aspekt arvutiprogrammide vahelises suhtluses. Kui programmid vahetavad andmeid, eriti võrkude kaudu, tuleb arvestada mitmete turvariskidega.</p>
+                    
+                    <h3>Levinud turvaprobleemid</h3>
+                    <ul>
+                        <li>Autentimine - Suhtlevate osapoolte identiteedi kontrollimine</li>
+                        <li>Autoriseerimine - Tagamine, et osapooltel on vajalikud juurdepääsuõigused</li>
+                        <li>Andmete terviklikkus - Tagamine, et andmeid ei muudeta edastamise ajal</li>
+                        <li>Konfidentsiaalsus - Andmete kaitsmine volitamata juurdepääsu eest</li>
+                        <li>Mitteeitamine - Sõnumi saatmise eitamise vältimine</li>
+                        <li>Kättesaadavus - Tagamine, et teenused jäävad kättesaadavaks</li>
+                    </ul>
+                    
+                    <h3>Turvameetmed</h3>
+                    <ul>
+                        <li>Krüpteerimine - Andmete konfidentsiaalsuse kaitsmine</li>
+                        <li>Digitaalsed allkirjad - Andmete terviklikkuse ja autentsuse tagamine</li>
+                        <li>Juurdepääsukontroll - Ressurssidele juurdepääsu piiramine</li>
+                        <li>Turvalised protokollid - HTTPS, SFTP jne kasutamine</li>
+                        <li>API võtmed ja tokenid - API-dele juurdepääsu kontrollimine</li>
+                        <li>Piirangud - Teenuste kuritarvitamise vältimine</li>
+                    </ul>
+                </section>
+                
+                <section id="case-studies">
+                    <h2>Juhtumiuuringud</h2>
+                    
+                    <h3>Logistikaettevõtte integratsioon</h3>
+                    <p>Globaalne logistikaettevõte rakendas hajussüsteemi, kus:</p>
+                    <ul>
+                        <li>Iga piirkond haldab oma lao- ja transpordisüsteeme</li>
+                        <li>Keskne süsteem koordineerib globaalseid operatsioone</li>
+                        <li>Andmed sünkroniseeritakse piirkondade vahel</li>
+                        <li>Kliendid näevad ühtset vaadet olenemata sellest, millises piirkonnas nende kaup asub</li>
+                    </ul>
+                    
+                    <div class="image-container">
+                        <img src="images/slide_21_image_3.png" alt="Logistika integratsiooni näide" class="gallery-img">
+                    </div>
+                    
+                    <h3>Laohaldussüsteem</h3>
+                    <p>Sünkroonse ja asünkroonse suhtluse näited logistikas:</p>
+                    <ul>
+                        <li>Sünkroonne: Laotöötaja skanneerib toote ja ootab kohest kinnitust, et toode on süsteemis registreeritud</li>
+                        <li>Asünkroonne: Tellimuse esitamine süsteemi, mis töötleb tellimusi järjekorras ja saadab hiljem e-kirja kinnitusega</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox for images -->
+    <div class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3>Kiirlingid</h3>
+                <ul>
+                    <li><a href="index.html">Avaleht</a></li>
+                    <li><a href="topics.html">Teemad</a></li>
+                    <li><a href="resources.html">Materjalid</a></li>
+                    <li><a href="about.html">Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Heino Talvik</p>
+                <p>E-post: heino.talvik@gmail.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Äriinfosüsteemid. Kõik õigused kaitstud.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
